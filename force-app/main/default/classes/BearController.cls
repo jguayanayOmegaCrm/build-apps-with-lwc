@@ -1,3 +1,10 @@
+/**
+ * @description       : 
+ * @author            : Johnny A. Guayanay Troya
+ * @group             : 
+ * @last modified on  : 04-18-2022
+ * @last modified by  : Johnny A. Guayanay Troya
+**/
 public with sharing class BearController {
     @AuraEnabled(Cacheable=true)
     public static Bear__c[] getAllBears() {
@@ -22,7 +29,7 @@ public with sharing class BearController {
     @AuraEnabled(Cacheable=true)
     public static Bear__c[] searchBears(String searchTerm) {
         // Return all bears when no search term
-        searchTerm = searchTerm.trim();
+        searchTerm = searchTerm.trim();  //con trim quitamos los espacios en blanco de la cadena
         if (searchTerm == '') {
             return getAllBears();
         }
