@@ -1,0 +1,21 @@
+.bear-tile {
+    border: 1px solid #d2955d;
+    background-color: #fae8d2;
+    border-radius: .25rem;
+    display: block;
+  }
+  .bear-silhouette {
+    height: 100px;
+  }
+  .bear-tile-body {
+    background: linear-gradient(180deg, rgba(255,255,255,1) 90%, #fae8d2 100%);
+  }
+  lightning-card
+{
+    width: 80%;
+    margin-left: 10%;
+}
+p
+{
+    color: rgb(28, 28, 28);
+}
